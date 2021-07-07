@@ -4,9 +4,8 @@ Appsmith can be deployed locally or on your private instance using docker.
 To simplify installation, Appsmith comes with an installation script that will download all of the necessary dependencies and help you configure Appsmith.
 
 Appsmith 可以使用 docker 部署在地端或是你的私有環境之中.  
-為了簡化安裝程序, Appsmith 提供了安裝腳本幫助你安裝相關的依賴與設定 Appsmith
-Cancel changes
-**Supported Operating Systems**
+為了簡化安裝程序, Appsmith 提供了安裝腳本幫助你安裝相關的依賴與設定 Appsmith. 
+
 **支援以下作業系統**
 
 * macOS
@@ -16,7 +15,7 @@ Cancel changes
 * CentOS
 
 {% hint style="warning" %}
-For Mac, [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) is required. For other operating systems, Docker will be installed automatically by the script.
+對 Mac　來說, [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) 是必要的. 對於其它的作業系統, Docker 將會透過腳本自動化安裝.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -27,26 +26,26 @@ For Mac on M1, we've seen problems with Docker getting into a corrupt state and 
 Appsmith does not officially support Windows \(or WSL\). Please try out one of our [pre-built images](../) if your production operating system is not on the list above.
 {% endhint %}
 
-Fetch the **install.sh** script on the system you want to deploy Appsmith
+在你想部署 appsmith 的系統下載安裝腳本 **install.sh** 
 
 ```bash
 # Downloads install.sh
 curl -O https://raw.githubusercontent.com/appsmithorg/appsmith/master/deploy/install.sh
 ```
 
-Make the script executable
+設定腳本為可執行
 
 ```bash
 chmod +x install.sh
 ```
 
-Run the script. **Do not run as sudo & make sure no other processes are running on ports 80 & 443**. If you must run appsmith on another port [read this guide](../../troubleshooting-guide/deployment-errors.md#ports-unavailable)
+執行腳本. **不允要執行 sudo & 並且確定 ports 80 & 443 並沒有被其它程序佔用**. 如果你需要在其它的 ports 執行 appsmith [請參考此指引](../../troubleshooting-guide/deployment-errors.md#ports-unavailable)
 
 ```bash
 ./install.sh
 ```
 
-Check if all the containers are running correctly.
+確認所有的 containers 是否運作順利.
 
 ```bash
 docker ps
