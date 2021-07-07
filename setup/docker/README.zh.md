@@ -3,7 +3,7 @@
 Appsmith can be deployed locally or on your private instance using docker. 
 To simplify installation, Appsmith comes with an installation script that will download all of the necessary dependencies and help you configure Appsmith.
 
-Appsmith 可以使用 docker 部署在地端或是你的私有環境之中.
+Appsmith 可以使用 docker 部署在地端或是你的私有環境之中.  
 為了簡化安裝程序, Appsmith 提供了安裝腳本幫助你安裝相關的依賴與設定 Appsmith
 Cancel changes
 **Supported Operating Systems**
